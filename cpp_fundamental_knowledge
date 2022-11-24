@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+#define day 7
+
+int main()
+{
+	cout << "一周有" << day << "天" << endl;
+
+	system("pause");
+	return 0;
+
+}
+在同一项目中，不能有两个main函数，否则无法运行
