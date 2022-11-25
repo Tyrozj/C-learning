@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	//统计关键字的内存空间大小(单位：字节)
+	a = sizeof(short);
+	int num = 10;
+	cout << a << endl;
+	cout << sizeof(num) << endl;
+	system("pause");
+	return 0;
+}
