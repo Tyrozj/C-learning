@@ -1,1 +1,19 @@
-include
+源文件
+#include<iostream>
+#include"swap.h"
+using namespace std;
+
+void arr_swap(int& a, int& b)
+{
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+	cout << "交换成功" << endl;
+}
+头文件
+#include<iostream>
+using namespace std;
+
+void arr_swap(int& a, int& b);
+
