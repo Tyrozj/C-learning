@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+	int a = 10;
+	int b = 20;
+	int* p = &a;//表示指针p指向的是a的地址
+	*p = 30;
+	cout << *p << endl;//解引用指针p，输出10
+	cout << p << endl;//输出a的地址0000004386B6F644
+	const int* p1 = &a;
+	//*p1 = 20,p1指向的值不能修改
+	p1 = &b;//p1的指向改为b的地址
+	cout << p1 << endl;//p1的指向可以改
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	int* p2 = arr;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << *p2 << endl;
+		p2++;
+	}
+	system("pause");
+	return 0;
+}
